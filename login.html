@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Home page</title>
+<script>
+function login(){
+const name=document.getElementById("uname");
+const password=document.getElementById("password");
+
+console.log("sucess")
+if(name.value=="cse" && password.value=="cse"){
+alert("login Successfull");
+}
+}
+</script>
+</head>
+<body style="background-color:pink">
+<center>
+<form style="border:1px solid blue;">
+<table>
+<tr>
+<th colspan=2>Registration Form</th>
+</tr>
+<tr>
+<td>User name</td>
+<td><input type="text" placeholder="Enter user name" id="uname"></td>
+</tr>
+<tr>
+<td>Mail Id</td>
+<td><input type="text" placeholder="Enter mail id" id="mail"></td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" id="dob"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" id="password"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td ><input type="radio" name="g">Male</td>
+<td><input type="radio" name="g">Female</td>
+</tr>
+<tr>
+<tr>
+<td>Course</td>
+<td><select>
+<option>CSE</option>
+<option>ECE</option>
+<option>MECH</option>
+</select></td>
+</tr>
+
+<td></td>
+<td><button onclick="login()">Submit</button></td>
+</tr>
+
+</form>
+</center>
+</body>
+</html>
